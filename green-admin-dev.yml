@@ -3,9 +3,9 @@ server:
   port: 8888
 
 # 服务名称
-spring: 
-  application:
-    name: green-admin
+# spring: 
+#  application:
+#    name: green-admin
           
 # erueka 客户端配置  
 eureka:
