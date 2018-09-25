@@ -1,33 +1,19 @@
 # server端口
 server:
   port: 8888
-  
----
-spring:
-  profiles: dev          
-# erueka 客户端配置
+
+# 服务名称
+spring: 
+  application:
+    name: green-admin
+          
+# erueka 客户端配置  
 eureka:
   client:
     healthcheck:
-      enabled: true # 开启健康检查
+      enabled: true #开启健康检查
     serviceUrl:
-      defaultZone: http://green:green888@localhost:8761/eureka/
-    registry-fetch-interval-seconds: 10
+      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 20
-#    appname: green-admin # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
-    
----
-spring:
-  profiles: prd  
-eureka:
-  client:
-    healthcheck:
-      enabled: true # 开启健康检查
-    serviceUrl:
-      defaultZone: http://green:green888@localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
-#    appname: green-admin # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
+ #   appname: config-server # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
