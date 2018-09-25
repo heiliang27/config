@@ -5,11 +5,11 @@ server:
 ---
 spring:
   profiles: dev          
-# erueka 客户端配置  
+# erueka 客户端配置
 eureka:
   client:
     healthcheck:
-      enabled: true #开启健康检查
+      enabled: true # 开启健康检查
     serviceUrl:
       defaultZone: http://green:green888@localhost:8761/eureka/
     registry-fetch-interval-seconds: 10
@@ -25,9 +25,9 @@ spring:
 eureka:
   client:
     healthcheck:
-      enabled: true #开启健康检查
+      enabled: true # 开启健康检查
     serviceUrl:
       defaultZone: http://green:green888@localhost:8761/eureka/
   instance:
     prefer-ip-address: true
-    appname: green-admin1 # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
+    appname: green-admin # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
