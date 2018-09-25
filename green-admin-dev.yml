@@ -1,7 +1,10 @@
 # server端口
 server:
   port: 8888
-          
+  
+---
+spring:
+  profiles: dev          
 # erueka 客户端配置  
 eureka:
   client:
@@ -11,4 +14,4 @@ eureka:
       defaultZone: http://green:green888@localhost:8761/eureka/
   instance:
     prefer-ip-address: true
- #   appname: config-server # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
+    appname: green-admin # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
