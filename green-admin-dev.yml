@@ -13,7 +13,7 @@ eureka:
     healthcheck:
       enabled: true #开启健康检查
     serviceUrl:
-      defaultZone: http://47.93.58.175:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
  #   appname: config-server # 配置服务名 类似  application:name: green-admin  没有 后者优先级高
